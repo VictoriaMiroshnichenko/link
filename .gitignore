@@ -3,3 +3,27 @@
 /.classpath
 /.settings
 /target/
+vika_ssh
+vika_ssh.pub
+######THis file set I've took from here https://github.com/github/gitignore
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+vika_ssh
