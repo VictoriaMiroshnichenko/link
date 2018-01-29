@@ -145,18 +145,15 @@
 
         <constructor-arg>
             <list>
-                	<bean class="org.opensaml.saml2.metadata.provider.HTTPMetadataProvider">
-  <!-- URL containing the metadata -->
-  <constructor-arg>
-    <!-- This URL should look something like this: https://example.okta.com/app/abc0defghijK1lmN23o4/sso/saml/metadata -->
-    <value type="java.lang.String">https://nixsolutions-miroshnichenco.okta.com/app/exkxdcbnxunTp7pQG1t6/sso/saml/metadata</value>
-  </constructor-arg>
-  <!-- Timeout for metadata loading in ms -->
-  <constructor-arg>
-    <value type="int">5000</value>
-  </constructor-arg>
-  <property name="parserPool" ref="parserPool"/>
-</bean>
+                <!-- Example of file system metadata without Extended Metadata -->
+                <!--
+                <bean class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider">
+                    <constructor-arg>
+                        <value type="java.io.File">/usr/local/metadata/idp.xml</value>
+                    </constructor-arg>
+                    <property name="parserPool" ref="parserPool"/>
+                </bean>
+                -->
             </list>
         </constructor-arg>
         <!-- OPTIONAL used when one of the metadata files contains information about this service provider -->
@@ -295,17 +292,5 @@
     </bean>
 
     <bean id="parserPoolHolder" class="org.springframework.security.saml.parser.ParserPoolHolder"/>
-	<bean class="org.opensaml.saml2.metadata.provider.HTTPMetadataProvider">
-  <!-- URL containing the metadata -->
-  <constructor-arg>
-    <!-- This URL should look something like this: https://example.okta.com/app/abc0defghijK1lmN23o4/sso/saml/metadata -->
-    <value type="java.lang.String">https://nixsolutions-miroshnichenco.okta.com/app/exkx9tub9Oa36VicV1t6/sso/saml/metadata</value>
-  </constructor-arg>
-  <!-- Timeout for metadata loading in ms -->
-  <constructor-arg>
-    <value type="int">5000</value>
-  </constructor-arg>
-  <property name="parserPool" ref="parserPool"/>
-</bean>
 
 </beans>
