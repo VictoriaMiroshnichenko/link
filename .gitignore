@@ -2,6 +2,10 @@
 /.project
 /.classpath
 /.settings
+/apache-tomcat-8.5.6_WEB_DEV/logs/*
+/apache-tomcat-8.5.6_WEB_DEV/work/*
+/external/test-data/
+
 /target/
 vika_ssh
 vika_ssh.pub
