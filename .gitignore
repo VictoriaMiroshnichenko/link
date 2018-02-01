@@ -5,6 +5,7 @@
 /apache-tomcat-8.5.6_WEB_DEV/logs/*
 /apache-tomcat-8.5.6_WEB_DEV/work/*
 /external/test-data/
+/src/main/webapp/media
 
 /target/
 vika_ssh
