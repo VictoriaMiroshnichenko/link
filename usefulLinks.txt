@@ -1,0 +1,10 @@
+Link_dev_study
+http://getbootstrap.com/docs/3.3/getting-started/#download
+https://github.com/VictoriaMiroshnichenko/link/tree/master/src
+http://jquery.com/download/
+http://localhost:8081/link/
+
+
+http://www.oneskyapp.com/ru/docs/bootstrap/css
+https://getbootstrap.com/docs/3.3/components/
+http://site-v-moskve.ru/blog/29-font-awesome-s-russkim-perevodom.html
