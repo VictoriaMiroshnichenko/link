@@ -15,59 +15,61 @@
 		<finalName>link</finalName>
 		<pluginManagement>
 			<plugins>
-			<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <configuration>
-  <source>1.7</source>
-	<target>1.7</target>
-  <showWarnings>true</showWarnings>
-  <showDeprecation>true</showDeprecation>
-  <debug>true</debug>
-  </configuration>
-  </plugin>
-  <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
- <artifactId>maven-war-plugin</artifactId>
- <version>2.6</version>
- <configuration>
- <warSourceDirectory>src\main\webapp</warSourceDirectory>
- <failOnMissingWebXml>false</failOnMissingWebXml>
- </configuration>
- 
-  </plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+						<showWarnings>true</showWarnings>
+						<showDeprecation>true</showDeprecation>
+						<debug>true</debug>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.6</version>
+					<configuration>
+						<warSourceDirectory>src\main\webapp</warSourceDirectory>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+
+				</plugin>
 				<plugin>
 					<artifactId>maven-antrun-plugin</artifactId>
 					<version>1.8</version>
 					<executions>
-					<execution>
-					<id>clean-lib</id>
-					<phase>clean</phase>
-					<configuration>
-					
-					<tasks>
-				<delete dir="${basedir}/src/main/webapp/WEB-INF/lib"/>
-					</tasks>
-					</configuration>
-					<goals>
-					<goal>run</goal></goals>
-					</execution>
-					<execution>
-					
-					<id>copy-lib</id>
-					<phase>package</phase>
-					<configuration>
-					<tasks>
-					<delete dir="${basedir}/src/main/webapp/WEB-INF/lib"/>
-					<copy todir="${basedir}/src/main/webapp/WEB-INF/lib">
-					<fileset dir="${basedir}/target/${project.build.finalName}/WEB-INF/lib"/>
-					</copy>
-					</tasks>
-					</configuration>
-					</execution>
+						<execution>
+							<id>clean-lib</id>
+							<phase>clean</phase>
+							<configuration>
+
+								<tasks>
+									<delete dir="${basedir}/src/main/webapp/WEB-INF/lib" />
+								</tasks>
+							</configuration>
+							<goals>
+								<goal>run</goal>
+							</goals>
+						</execution>
+						<execution>
+
+							<id>copy-lib</id>
+							<phase>package</phase>
+							<configuration>
+								<tasks>
+									<delete dir="${basedir}/src/main/webapp/WEB-INF/lib" />
+									<copy todir="${basedir}/src/main/webapp/WEB-INF/lib">
+										<fileset
+											dir="${basedir}/target/${project.build.finalName}/WEB-INF/lib" />
+									</copy>
+								</tasks>
+							</configuration>
+						</execution>
 					</executions>
-					
-					
+
+
 				</plugin>
 
 
@@ -99,14 +101,14 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-<dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>9.4.1208.jre7</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4.1208.jre7</version>
+		</dependency>
 
-<dependency>
+		<dependency>
 			<groupId>net.coobird</groupId>
 			<artifactId>thumbnailator</artifactId>
 			<version>0.4.8</version>
@@ -121,12 +123,12 @@
 			<artifactId>joda-time</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		<dependency>
 			<groupId>org.sitemesh</groupId>
 			<artifactId>sitemesh</artifactId>
@@ -226,17 +228,17 @@
 			<artifactId>restfb</artifactId>
 			<version>1.23.0</version>
 		</dependency>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-  </dependencies>
+
+
+
+
+
+
+
+
+
+
+
+
+	</dependencies>
 </project>
