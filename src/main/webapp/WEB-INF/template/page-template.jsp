@@ -7,18 +7,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Test Bootstrap</title>
-<link rel="stylesheet" href="static/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="static/css/bootstrap-theme.css" rel="stylesheet">
-<link rel="stylesheet" href="static/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="static/css/fontawesome.css" rel="stylesheet">
-<link rel="stylesheet" href="static/css/app.css" rel="stylesheet">
+<jsp:include page="../section/css.jsp"></jsp:include>
 </head>
 <body>
-<header></header>
-<nav></nav>
+<jsp:include page="../section/header.jsp"></jsp:include>
+<jsp:include page="../section/nav.jsp"></jsp:include>
 	<section class="main"> <sitemesh:write property='body' /> </section>
-	<script src="static/js/jquery.js"></script>
-	<script src="static/js/bootstrap.js"></script>
-	<script src="static/js/app.js"></script>
+<jsp:include page="../section/footer.jsp"></jsp:include>
+<jsp:include page="../section/js.jsp"></jsp:include>
 </body>
 </html>
