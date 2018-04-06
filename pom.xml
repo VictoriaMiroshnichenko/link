@@ -11,7 +11,7 @@
 
 	<build>
 
-		<directory>D:\!_WORK\Workspace\link\target</directory>
+		<directory>D:\Teach2\web_dev\link\target</directory>
 		<finalName>link</finalName>
 		<pluginManagement>
 			<plugins>
