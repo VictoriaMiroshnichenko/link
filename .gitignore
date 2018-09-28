@@ -4,6 +4,7 @@
 /.settings
 /apache-tomcat-8.5.6_WEB_DEV/logs/*
 /apache-tomcat-8.5.6_WEB_DEV/work/*
+/apache-tomcat-8.5.6_WEB_DEV/webapps/*
 /external/test-data/
 /src/main/webapp/media
 

@@ -9,10 +9,10 @@
 <title>Test Bootstrap</title>
 <jsp:include page="../section/css.jsp"></jsp:include>
 </head>
-<body>
+<body class="resume">
 <jsp:include page="../section/header.jsp"></jsp:include>
 <jsp:include page="../section/nav.jsp"></jsp:include>
-	<section class="main"> <sitemesh:write property='body' /> </section>
+<section class="main"> <sitemesh:write property='body' /> </section>
 <jsp:include page="../section/footer.jsp"></jsp:include>
 <jsp:include page="../section/js.jsp"></jsp:include>
 </body>
